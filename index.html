@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/81670265ac.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/616c7f5836.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header--nav">
+        <img src="./assets/logo.svg" alt="Logo" class="logo" />
+        <ul class="header--nav--items">
+          <li><a href="#section-episodes">EPISODIOS</a></li>
+          <li><a href="#section-aboutus">NOSOTROS</a></li>
+          <li><a href="#section-interviews">ENTREVISTAS</a></li>
+          <li><a href="#section-topics">TÓPICOS</a></li>
+        </ul>
+      </nav>
+      <nav class="mobile-menu">
+        <input type="checkbox" id="hamburguesa" />
+        <div class="mobile-menu-header">
+          <img src="./assets/logo.svg" alt="Logo" class="logo" />
+          <label for="hamburguesa">
+            <img
+              height="20px"
+              src="./assets/icono-hamburguesa.svg"
+              alt="burguer"
+            />
+          </label>
+        </div>
+        <ul class="nav-menu-movil">
+          <li><a href="#section-episodes">EPISODIOS</a></li>
+          <li><a href="#section-aboutus">NOSOTROS</a></li>
+          <li><a href="#section-interviews">ENTREVISTAS</a></li>
+          <li><a href="#section-topics">TÓPICOS</a></li>
+        </ul>
+      </nav>
+      <section class="header--content">
+        <h1 class="header--content--title">
+          Hello <span class="line-world">world</span> pale blue dot.
+        </h1>
+        <p class="header--content--text">
+          Un podcast que explora el mundo de la programación. Nuevos episodios,
+          todos los jueves cada 15 días.
+        </p>
+        <button class="boton boton--hover">
+          <span role="button">CONOCÉ MÁS</span>
+        </button>
+      </section>
+    </header>
+    <main class="main">
+      <section class="episodes" id="section-episodes">
+        <div
+          class="episodes--container--back background--blue episodes--polygon"
+        ></div>
+        <h2 class="episodes--container--title">Episodios</h2>
+        <div class="podcast--container">
+          <iframe
+            title="Running Node Natively"
+            class="podcast--item"
+            src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"
+            allow="encrypted-media"
+          ></iframe>
+          <iframe
+            title="React + TypeScript Syntax"
+            class="podcast--item"
+            src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby"
+            allow="encrypted-media"
+          ></iframe>
+          <iframe
+            title="You Had Me At Hylo"
+            class="podcast--item"
+            src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv"
+            allow="encrypted-media"
+          ></iframe>
+          <iframe
+            title="The Railsconf 2021"
+            class="podcast--item"
+            src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"
+            allow="encrypted-media"
+          ></iframe>
+        </div>
+      </section>
+      <section class="aboutus" id="section-aboutus">
+        <div class="aboutus-container">
+          <figure class="aboutus--figure">
+            <img
+              class="aboutus--figure--img"
+              src="./assets/phone.png"
+              alt="Phone image"
+            />
+          </figure>
+          <div class="aboutus--description">
+            <h2 class="aboutus--title">De dónde venimos</h2>
+            <p class="aboutus--text">
+              Our posturings, our imagined self-importance, the delusion that we
+              have some privileged position in the Universe, are challenged by
+              this point of pale light.<br /><br />
+              Our planet is a lonely speck in the great enveloping cosmic dark.
+              In our obscurity, in all this vastness, there is no hint that help
+              will come from elsewhere to save us from ourselves.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="interviews" id="section-interviews">
+        <h2 class="interviews--title">Invitadas/os estelares</h2>
+        <div class="interviews--photos">
+          <img
+            src="./assets/grace-hopper.png"
+            alt=""
+            class="interviews--photos--item"
+          />
+          <img
+            src="./assets/Katie-Bouman.png"
+            alt=""
+            class="interviews--photos--item"
+          />
+          <img
+            src="./assets/Margaret_Hamilton.png"
+            alt=""
+            class="interviews--photos--item"
+          />
+          <img
+            src="./assets/ERAUnivac1950s.png"
+            alt=""
+            class="interviews--photos--item"
+          />
+          <img
+            src="./assets/ComputeroperatorsEniac.png"
+            alt=""
+            class="interviews--photos--item"
+          />
+          <img
+            src="./assets/susan-kare.png"
+            alt=""
+            class="interviews--photos--item"
+          />
+        </div>
+      </section>
+      <section class="topics" id="section-topics">
+        <h2 class="topics--title">Algunos de nuestros temas</h2>
+        <div class="topics--cards">
+          <div class="topics--cards--item">
+            <img
+              src="./assets/icon1.svg"
+              alt=""
+              class="topics--cards--item--img"
+            />
+            <h3 class="topics--cards--item--title">
+              Trabajo remoto
+            </h3>
+          </div>
+          <div class="topics--cards--item">
+            <img
+              src="./assets/icon2.svg"
+              alt=""
+              class="topics--cards--item--img"
+            />
+            <h3 class="topics--cards--item--title">
+              Repensando la programación
+            </h3>
+          </div>
+          <div class="topics--cards--item">
+            <img
+              src="./assets/icon3.svg"
+              alt=""
+              class="topics--cards--item--img"
+            />
+            <h3 class="topics--cards--item--title">
+              Bases del código
+            </h3>
+          </div>
+          <div class="topics--cards--item">
+            <img
+              src="./assets/icon4.svg"
+              alt=""
+              class="topics--cards--item--img"
+            />
+            <h3 class="topics--cards--item--title">
+              Seguridad informática
+            </h3>
+          </div>
+        </div>
+      </section>
+      <section class="novelties">
+        <div class="novelties--back background--blue novelties-polygon"></div>
+        <div class="novelties--contents">
+          <h2 class="novelties--contents--title">
+            ¿Querés las últimas novedades?
+          </h2>
+          <button class="novelties--boton boton--hover">
+            <span role="button">ESCUCHÁ LOS EPISODIOS</span>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="fotter--copyright">
+        &copy; 2019 — Hello blue pale dot
+      </p>
+      <div class="footer--icons">
+        <i class="fab fa-spotify"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-telegram"></i>
+      </div>
+    </footer>
+  </body>
+</html>
