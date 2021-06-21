@@ -107,6 +107,16 @@ html {
   display: none;
 }
 
+.burguer-linea-1,
+.burguer-linea-2,
+.burguer-linea-3 {
+  width: 20px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0px;
+  transition: 0.4s ease-out;
+}
+
 .header--content {
   margin-top: 100px;
   padding: 0px 0px 0px 15%;
@@ -134,7 +144,7 @@ html {
   margin-bottom: 60px;
 }
 
-.boton {
+.header--content--boton {
   padding: 0 30px;
   border: none;
   cursor: pointer;
@@ -157,6 +167,14 @@ html {
   width: 100%;
   height: 880px;
 }
+
+.episodes--container--back {
+  position: absolute;
+  width: 100%;
+  height: 880px;
+  z-index: -1;
+}
+
 .episodes--container--title {
   font-family: "IBM Plex Sans", sans-serif;
   color: #fff;
@@ -164,6 +182,10 @@ html {
   font-size: 48px;
   padding-top: 220px;
   padding-left: 250px;
+}
+
+.episodes--polygon {
+  clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%);
 }
 
 .podcast--container {
@@ -179,17 +201,6 @@ html {
   height: 200px;
   width: 50%;
   border: none;
-}
-
-.episodes--container--back {
-  position: absolute;
-  width: 100%;
-  height: 880px;
-  z-index: -1;
-}
-
-.episodes--polygon {
-  clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%);
 }
 
 /* ********************* */

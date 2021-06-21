@@ -31,12 +31,25 @@
   .mobile-menu-header {
     display: flex;
     justify-content: space-between;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 20px 10px 15px;
   }
 
   #hamburguesa:checked ~ .nav-menu-movil {
     transform: translateX(0%);
   }
+
+  #hamburguesa:checked ~ .mobile-menu-header label div.burguer-linea-1 {
+    transform: rotate(-45deg) translate(-3.5px, 0px);
+  }
+
+  #hamburguesa:checked ~ .mobile-menu-header label div.burguer-linea-2 {
+    opacity: 0;
+  }
+
+  #hamburguesa:checked ~ .mobile-menu-header label div.burguer-linea-3 {
+    transform: rotate(45deg) translate(-8px, -4.5px);
+  }
+
   .nav-menu-movil li:hover {
     background: #0000ff;
     color: #00f3bb;
@@ -66,7 +79,7 @@
     margin-bottom: 60px;
     margin-top: 15px;
   }
-  .boton {
+  .header--content--boton {
     width: 100%;
   }
 }
