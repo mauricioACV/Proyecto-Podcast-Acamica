@@ -107,9 +107,9 @@ html {
   display: none;
 }
 
-.burguer-linea-1,
-.burguer-linea-2,
-.burguer-linea-3 {
+.burguer-line-1,
+.burguer-line-2,
+.burguer-line-3 {
   width: 20px;
   height: 3px;
   background-color: #333;

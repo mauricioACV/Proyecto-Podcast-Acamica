@@ -31,23 +31,28 @@
   .mobile-menu-header {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px 10px 15px;
+    padding: 10px;
+  }
+
+  .mobile-menu-header .logo {
+    width: 28px;
+    height: 28px;
   }
 
   #hamburguesa:checked ~ .nav-menu-movil {
     transform: translateX(0%);
   }
 
-  #hamburguesa:checked ~ .mobile-menu-header label div.burguer-linea-1 {
-    transform: rotate(-45deg) translate(-3.5px, 0px);
+  #hamburguesa:checked ~ .mobile-menu-header label div.burguer-line-1 {
+    transform: rotate(-45deg) translate(-5px, 8px);
   }
 
-  #hamburguesa:checked ~ .mobile-menu-header label div.burguer-linea-2 {
+  #hamburguesa:checked ~ .mobile-menu-header label div.burguer-line-2 {
     opacity: 0;
   }
 
-  #hamburguesa:checked ~ .mobile-menu-header label div.burguer-linea-3 {
-    transform: rotate(45deg) translate(-8px, -4.5px);
+  #hamburguesa:checked ~ .mobile-menu-header label div.burguer-line-3 {
+    transform: rotate(45deg) translate(0px, -4px);
   }
 
   .nav-menu-movil li:hover {
